@@ -60,7 +60,7 @@ def get_adaptive_outlier_threshold(
         weight: Матрица весов [out_features, in_features]
         H_inv_cho_diag: Диагональ обратной матрицы Гессиана
         base_threshold: Базовый порог из конфигурации
-        adaptation_factor: Коэффициент адаптации (1.0 = без адаптации)
+        adaptation_factor: Коэффициент адаптации (0.0 = без адаптации, 1.0 = стандартная адаптация)
     Returns:
         Адаптивный порог для текущего слоя
     """
